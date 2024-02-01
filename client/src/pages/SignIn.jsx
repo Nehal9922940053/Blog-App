@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link , useNavigate} from 'react-router-dom';
 import {Spinner, Alert, Button, Label, TextInput } from 'flowbite-react';
 import { useDispatch , useSelector} from 'react-redux';
-import { signInStart, signInSuccess, signInFailure } from '../redux/user/userSlice';
+import { signInStart, signInSuccess, signInFailure } from '../store/user/userSlice';
 
 export default function SignIn() {
 
