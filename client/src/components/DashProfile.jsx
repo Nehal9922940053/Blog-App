@@ -58,7 +58,6 @@ uploadTask.on(
   },
   (error)=>{
     setImageFileUploadError('Could not upload Image (File must be less than 2 MB)'
-    
     ); 
     setImageFileUploadProgress(null);
     setImageFile(null);
