@@ -9,3 +9,33 @@ body{
 .ql-editor {
     font-size: 1.05rem;
 }
+
+.post-centent p{
+margin-bottom: 0.5rem;
+}
+
+.post-centent h1{
+    font-size: 1.5rem;
+    font-weight:600;
+    font-family: sans-serif;
+    margin: 1.5rem 0;
+}
+
+.post-centent h2{
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    margin: 1.5rem 0;
+}
+
+.post-centent a{
+    color: rgb(73, 149, 199);
+    text-decoration: none;
+}
+
+.post-centent a:hover{
+    text-decoration: underline;
+}
+
+.dark .post-centent a{
+    color:red;
+}
