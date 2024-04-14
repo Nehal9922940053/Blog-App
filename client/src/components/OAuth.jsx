@@ -14,11 +14,11 @@ export default function OAuth() {
     const navigate = useNavigate();
 
     const handleGoogleClick = async() =>{
-        const provider = new GoogleAuthProvider()
+        const provider = new GoogleAuthProvider();
         provider.setCustomParameters({ prompt: 'select_account'})
         try {
             const resultsFromGoogle = await signInWithPopup(auth, provider);
-            const res = await fetch('api/auth/google', {
+            const res = await fetch('/api/auth/google', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
@@ -29,7 +29,7 @@ export default function OAuth() {
                 })
                 const data = await res.json()
                 if(res.ok){
-                    dispatch(signInSuccess(data))
+                    dispatch(signInSuccess(data));
                     navigate('/');
                 }
             

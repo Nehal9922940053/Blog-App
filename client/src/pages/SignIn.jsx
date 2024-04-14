@@ -19,6 +19,7 @@ export default function SignIn() {
     e.preventDefault();
     if(!formData.email || !formData.password){
       return dispatch(signInFailure('Please fill out all fields.'));
+
     }
   
 
